@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">MyPortfolio</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I am a <span id="role">Creative Developer</span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="profile pic.jpg" alt="Profile Picture">
+        <div class="about-text">
+          <p>
+            I'm a creative developer passionate about designing and building beautiful websites and applications.
+            With expertise in HTML, CSS, and JavaScript, I create engaging experiences that are both functional and aesthetically pleasing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>A modern, responsive design for an e-commerce website.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>A creative web app for productivity and task management.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Project Three</h3>
+            <p>An interactive landing page with smooth animations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
